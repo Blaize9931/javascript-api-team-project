@@ -2,8 +2,8 @@
 
 /* Global CSS Styles */
 :root {
-  --primary-color: #10c3c9;
-  --secondary-color: orange;
+  --primary-color: aqua;
+  --secondary-color: green;
   --text-color: #141414;
   --primary-font: Verdana, Geneva, Tahoma, sans-serif;
   --secondary-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color:aquamarine;
   font-family: var(--secondary-font);
   color: var(--text-color);
 }
