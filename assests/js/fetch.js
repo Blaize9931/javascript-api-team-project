@@ -6,6 +6,15 @@ fetch('https://newsapi.org/v2/everything?q=tesla&from=2026-01-05&sortBy=publishe
 
   function displayNews(articles) {
     console.log(articles);
-  }
+
+  };
+// catching DOM elements
+
+const searchTerm = document.getElementById("searchInput");
+const searchBtn = document.querySelector(".search-btn");
+
+searchBtn.addEventListener("click", function(e) {
+  console.log(e.target.value)
+})
 
 
