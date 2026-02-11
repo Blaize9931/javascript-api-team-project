@@ -1,5 +1,5 @@
 fetch(
-  'https://newsapi.org/v2/everything?q=tesla&from=2026-01-05&sortBy=publishedAt&apiKey=d199684dc0a64bfeb06f85cc8baa0aaf',
+  'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d199684dc0a64bfeb06f85cc8baa0aaf',
 )
   .then((response) => response.json())
   .then((data) => displayNews(data))
@@ -28,7 +28,7 @@ function displayNews(data) {
             src="${article.urlToImage || ''}"
             alt=""
             <p>
-              <small class="title">Title: ${article.title}</small>
+              <small>Title: ${article.title}</small>
             </p>
           </div>  
       </div>
