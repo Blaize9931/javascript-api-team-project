@@ -1,5 +1,5 @@
 // Weather API call for getting the City Name
-let apiKey = '2e63d9aadc65efaf2637aa107b187327';
+const apiKey = '2e63d9aadc65efaf2637aa107b187327';
 
 const getCoordinates = (city) => {
   return fetch(
@@ -140,9 +140,9 @@ const formatTime = (timestamp, timezoneOffset) => {
 
 /// News API JS
 
-fetch(
-  'https://newsapi.org/v2/top-headlines?country=us&apiKey=d199684dc0a64bfeb06f85cc8baa0aaf',
-)
+const APIkey = 'd199684dc0a64bfeb06f85cc8baa0aaf';
+
+fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${APIkey}`)
   .then((response) => response.json())
   .then((data) => displayNews(data))
   .catch((error) => console.log(error));
@@ -165,10 +165,11 @@ function displayNews(data) {
             
           <div class="col-md-6">
             <img
-            class="d-block img-thumbnail mb-4"
-            width="350px"
-            src="${article.urlToImage || ''}"
-            alt=""
+                class="d-block img-thumbnail mb-4"
+                width="350px"
+                src="${article.urlToImage || ''}"
+                alt="" 
+            />
             <p>
               <small>Title: ${article.title}</small>
             </p>
